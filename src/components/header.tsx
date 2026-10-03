@@ -7,11 +7,11 @@ interface NavItem {
 const projectNav: NavItem[] = [
     { id: 1, name: "Inicio", href: "/dashboard" },
     { id: 2, name: "Área conocimiento", href: "/area-conocimiento" },
-    { id: 3, name: "Criterio evaluación", href: "/criterios-evaluacion" },
-    { id: 4, name: "Docente", href: "/docentes" },
-    { id: 5, name: "Estado propuesta", href: "/estados-propuestas" },
-    { id: 6, name: "Facultad", href: "/facultades" },
-    { id: 7, name: "Tipo innovación", href: "/tipos-innovacion" }
+    { id: 3, name: "Criterio evaluación", href: "/criterio-evaluacion" },
+    { id: 4, name: "Docente", href: "/docente" },
+    { id: 5, name: "Estado propuesta", href: "/estado-propuesta" },
+    { id: 6, name: "Facultad", href: "/facultad" },
+    { id: 7, name: "Tipo innovación", href: "/tipo-innovacion" }
 ];
 
 export default function ProjectHeader() {
