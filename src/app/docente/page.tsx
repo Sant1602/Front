@@ -131,8 +131,8 @@ export default function Docente() {
                                         <td className="px-4 py-3">
                                             <span
                                                 className={`rounded-full px-3 py-1 text-xs font-medium ${docente.activo
-                                                        ? "bg-green-100 text-green-700"
-                                                        : "bg-red-100 text-red-700"
+                                                    ? "bg-green-100 text-green-700"
+                                                    : "bg-red-100 text-red-700"
                                                     }`}
                                             >
                                                 {docente.activo ? "Activo" : "Inactivo"}
@@ -140,7 +140,18 @@ export default function Docente() {
                                         </td>
                                     </tr>
                                 ))
-                                : <h1 className="w-full text-black py-10 text-center">No hay registros</h1>}
+                                : (
+
+                                    <tr>
+                                        <td
+                                            colSpan={4}
+                                            className="py-10 text-center text-black"
+                                        >
+                                            No hay registros
+                                        </td>
+                                    </tr>
+
+                                )}
                         </tbody>
                     </table>
                 </div>
